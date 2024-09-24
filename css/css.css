@@ -8,26 +8,29 @@ h1{
     color: #000;
     text-align: center;
     font-family: 'Playfair Display', serif;
+    max-width: 500rem;
+    font-size: 3rem;
 }
 h2{
     font-family: 'Playfair Display', serif;
+   
 }
 h3{
     font-family: 'Playfair Display', serif;
 }
 
 header{
-    font-size: 100px;
+    font-size: auto;
 }
 
 .nomPagina{
     margin-top: 7rem;
     margin-bottom: 4rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 7rem;
 }
 h1 span{
-    color: rgb(255, 0, 34);
+    color: rgb(59, 140, 216);
     text-align: center;
 }
 
@@ -35,6 +38,8 @@ h1 span{
 img{
     max-width: 100%;
     display: block;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 150px;
 }
 
 .categorias h2{
@@ -48,11 +53,11 @@ img{
 
 
 .cont-nav-global{
-    max-width: auto;
+    max-width: 500rem;
+    font-size: 3rem;
 }
 
 .centrar{
-     
     margin: 0 auto;
 }
 
@@ -60,8 +65,11 @@ img{
 .navegacion{
     padding: 2rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
 
+.navegacion a{
+    text-decoration: #d12173;
 }
 
 
@@ -73,18 +81,109 @@ img{
     height: 55rem;
 }
 
+.centrarTitulo{
+    text-align: center;
+    max-width: 500rem;
+    font-size: 3rem;
+}
+
+
+.contMain{
+    padding-top: 5rem ;
+
+}
+
+
+
+.productosList{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+}
+
+.productos:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+
+}
+
+.productos:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.productos:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.productos:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.productos:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.productos:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+
+.productos{
+    background-color: #2191d1;
+
+}
+
+.infoProducto{
+    text-align: center;
+    color: #ffffff;
+    padding: 2rem;
+
+
+}
+
+.infoProducto .costo{
+    font-size: 2rem;
+}
+.infoProducto a{
+    text-transform: uppercase;
+    background-color: #40af00;
+    display: block;
+    color: #FFFFFF;
+    font-weight: 750;
+    padding: 1rem;
+    transition: background-color .5s ease-out;
+    
+}
+
+.infoProducto a:hover{
+    background-color:#2f6b0de0 ;
+}
+
+
+.expandir{
+    transition: transform 0.4s ease;
+}
+
+.expandir:hover {
+    transform: scale(1.05);
+}
+
+
+
 .categoria a{
     text-align: center;
     display: block;
-    padding: 2rem;
+    padding: .8rem;
     font-size: 2rem;
+    border-end-end-radius: 30px;
 }
 
 .categoria a:hover{
-    background-color: rgb(77, 117, 204);
+    background-color: rgb(55, 148, 42);
     color: aliceblue;
     font-size: 2rem;
-    border-top: 4rem;
+    border-top: 2rem;
 }
 
 .list-categorias{
