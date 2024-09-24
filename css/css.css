@@ -1,0 +1,95 @@
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+h1{
+    color: #000;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+h2{
+    font-family: 'Playfair Display', serif;
+}
+h3{
+    font-family: 'Playfair Display', serif;
+}
+
+header{
+    font-size: 100px;
+}
+
+.nomPagina{
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 3rem;
+}
+h1 span{
+    color: aqua;
+    text-align: center;
+}
+
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.categorias h2{
+    text-align: center;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+.cont-nav-global{
+    max-width: auto;
+}
+
+.centrar{
+     
+    margin: 0 auto;
+}
+
+
+.navegacion{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.hero{
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 55rem;
+}
+
+.categoria a{
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.categoria a:hover{
+    background-color: rgb(77, 117, 204);
+    color: aliceblue;
+    font-size: 2rem;
+    border-top: 4rem;
+}
+
+.list-categorias{
+      display: grid ;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+}
+
