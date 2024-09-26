@@ -184,9 +184,13 @@ img{
 
 .infoProducto .costo{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
+    
     display: block;
+
+    margin: 0 auto;
 }
+
 .infoProducto a{
     text-transform: uppercase;
     background-color: #40af00;
