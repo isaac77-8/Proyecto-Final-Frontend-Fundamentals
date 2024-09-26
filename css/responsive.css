@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 970px){
     body{
-        background-color: rgb(189, 191, 197);
+        background-color: rgb(76, 87, 119);
         .content-container{
             flex-direction: column;
         }

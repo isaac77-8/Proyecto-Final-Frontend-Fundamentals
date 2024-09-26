@@ -38,8 +38,19 @@ h1 span{
 img{
     max-width: 100%;
     display: block;
-    border-top-left-radius: 50px;
+    
     border-top-right-radius: 150px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 30px auto;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
 }
 
 .categorias h2{
@@ -47,13 +58,13 @@ img{
 }
 
 .contenedor{
-    max-width: 120rem;
+    max-width: 90rem;
     margin: 0 auto;
 }
 
 
 .cont-nav-global{
-    max-width: 500rem;
+    max-width: 150rem;
     font-size: 3rem;
 }
 
@@ -78,18 +89,21 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 55rem;
+    margin: 10px;
+    height: 40rem;
 }
 
 .centrarTitulo{
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     max-width: 500rem;
     font-size: 3rem;
 }
 
 
 .contMain{
-    padding-top: 5rem ;
+    padding-top: 1rem ;
 
 }
 
@@ -104,21 +118,46 @@ img{
 .productos:nth-child(1){
     grid-column-start: 1;
     grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
 
 }
+
+.productos:nth-child(1) img{ 
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 .productos:nth-child(2){
     grid-column-start: 1;
     grid-column-end: 4;
 }
+
+.productos:nth-child(2) img{ 
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
+}
+
 .productos:nth-child(3){
     grid-column-start: 4;
     grid-column-end: 7;
 }
+
+.productos:nth-child(3) img{ 
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
+}
+
 .productos:nth-child(4){
     grid-column-start: 1;
     grid-column-end: 3;
 }
+
+
 .productos:nth-child(5){
     grid-column-start: 3;
     grid-column-end: 5;
@@ -137,20 +176,23 @@ img{
 .infoProducto{
     text-align: center;
     color: #ffffff;
+    margin-top: 2rem;
     padding: 2rem;
 
 
 }
 
 .infoProducto .costo{
+    text-align: center;
     font-size: 2rem;
+    display: block;
 }
 .infoProducto a{
     text-transform: uppercase;
     background-color: #40af00;
     display: block;
     color: #FFFFFF;
-    font-weight: 750;
+    font-weight: 700;
     padding: 1rem;
     transition: background-color .5s ease-out;
     
@@ -167,6 +209,7 @@ img{
 
 .expandir:hover {
     transform: scale(1.05);
+    border-radius: 50px;
 }
 
 
@@ -180,7 +223,7 @@ img{
 }
 
 .categoria a:hover{
-    background-color: rgb(55, 148, 42);
+    background-color: #2191d1;
     color: aliceblue;
     font-size: 2rem;
     border-top: 2rem;
@@ -192,3 +235,37 @@ img{
       gap: 20px;
 }
 
+/**Footer**/
+
+.piePagina{
+    border-top: 3px solid #817f7f;
+    margin-top: 4rem;
+    padding-top: 1rem;
+
+}
+
+.grid-piePagina{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 3rem;
+}
+
+.grid-piePagina h3{
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+.pieNav a{
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   color: #000;
+
+}
+
+.piePagina p{
+    margin: 5rem 0 5rem 0;
+    text-align: center;
+    font-size: 15px;
+}
