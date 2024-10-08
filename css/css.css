@@ -38,7 +38,6 @@ h1 span{
 img{
     max-width: 100%;
     display: block;
-    
     border-top-right-radius: 150px;
 }
 
@@ -170,7 +169,6 @@ img{
 
 .productos{
     background-color: #2191d1;
-
 }
 
 .infoProducto{
@@ -185,9 +183,7 @@ img{
 .infoProducto .costo{
     text-align: center;
     font-size: 1rem;
-    
     display: block;
-
     margin: 0 auto;
 }
 
